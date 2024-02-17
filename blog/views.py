@@ -9,6 +9,9 @@ def test(request):
 def home(request):
     return render(request, 'home.html')
 
+def form(request):
+    return render(request, 'form.html')
+
 def post_create(request):
     if request.method == "GET":
         return render(request, 'post/create.html')
